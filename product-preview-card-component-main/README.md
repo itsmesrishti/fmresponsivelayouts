@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Screenshot
 
-![png](screenshot.png)
+![](screenshot.png)
 
 ## My process
 
@@ -53,22 +53,17 @@ Users should be able to:
 I learned how you can use <picture> tag to render diff images based on screen sizes.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+        <source
+          srcset="/images/image-product-desktop.jpg"
+          media="(min-width: 64em)"
+        />
+        <img
+          src="/images/image-product-mobile.jpg"
+          alt="image of perfume bottle"
+        />
+      </picture>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Useful resources
 
@@ -76,8 +71,6 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - [Example resource 2](https://web.dev/learn/design/responsive-images)
 
 These articles helped me make a better decision regarding the images for this project. It was linked as a reading resource by FEM in the lesson before this challenge.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Acknowledgments
 
