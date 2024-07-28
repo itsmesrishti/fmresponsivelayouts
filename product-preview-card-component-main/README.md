@@ -1,6 +1,6 @@
 <h1 align="center">Frontend Mentor - Product preview card component solution</h1>
 
-<div align="center">This is a solution to the <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa">Product preview card component challenge on Frontend Mentor</a></div>
+<div align="center">This is a solution to the <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa">Product preview card component challenge</a> on <a href="https://www.frontendmentor.io">Frontend Mentor</a></div>
 
 <div align="center">
   <h3>
