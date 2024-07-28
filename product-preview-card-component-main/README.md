@@ -37,8 +37,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshot.png)
-![](screenshot-2.png)
+![](screenshot.png) ![](screenshot-2.png)
 
 ## My process
 
