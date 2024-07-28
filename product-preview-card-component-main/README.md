@@ -1,6 +1,6 @@
 <h1 align="center">Frontend Mentor - Product preview card component solution</h1>
 
-<div align="center">This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).</div>
+<div align="center">This is a solution to the <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa">Product preview card component challenge on Frontend Mentor</a></div>
 
 <div align="center">
   <h3>
@@ -19,15 +19,13 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
+- [Author](#author)
+  
 ## Overview
 
 ### The challenge
