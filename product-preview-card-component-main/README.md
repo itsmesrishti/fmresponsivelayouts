@@ -1,6 +1,6 @@
-<h1>Frontend Mentor - Product preview card component solution</h1>
+<h1 align="center">Frontend Mentor - Product preview card component solution</h1>
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
+<p align="center">This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).</p>
 
 <div align="center">
   <h3>
@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](screenshot.png)
 
 ## My process
 
