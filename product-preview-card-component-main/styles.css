@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  padding: 1rem 0.8rem;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: clamp(0.7rem, 1vw, 0.85rem);
+  line-height: 1.7;
+}
+@media screen and (max-height: 34em) {
+  body {
+    gap: 1rem;
+  }
+}
+
+h1,
+.discounted-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  margin: calc(0.5rem + 0.5vw) 0 calc(0.7rem + 0.7vw);
+  font-size: clamp(1.7rem, 1.3vw + 1rem, 2rem);
+  line-height: 1;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.7rem;
+}
+
+.pricing span:last-of-type {
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: clamp(1.7rem, 1.3vw + 1rem, 2rem);
+  font-size: 1.7rem;
+  color: hsl(158, 36%, 37%);
+}
+
+button {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 90vw;
+}
+main picture img {
+  max-inline-size: 100%;
+  border-radius: 10px 10px 0 0;
+}
+main .content {
+  padding: calc(1rem + 1vw);
+}
+main .pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 calc(0.8rem + 0.5vw);
+}
+main button {
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+main button:hover {
+  background-color: hsl(159, 36%, 22%);
+}
+@media screen and (min-width: 25em) {
+  main {
+    width: 62vw;
+  }
+}
+@media screen and (min-width: 34em) {
+  main {
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  main {
+    display: flex;
+    width: 45vw;
+    max-width: 37rem;
+    max-height: 27rem;
+  }
+  main picture,
+  main .content {
+    width: 50%;
+  }
+  main picture {
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+  }
+  main picture img {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 100em) {
+  main {
+    max-width: 45rem;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 0.6rem;
+}
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(228, 12%, 48%);
+}
+footer a:hover {
+  color: hsl(158, 36%, 37%);
+  text-decoration: underline;
+}
+@media screen and (max-height: 34em) {
+  footer {
+    position: static;
+  }
+}/*# sourceMappingURL=styles.css.map */
