@@ -67,17 +67,14 @@ I learned how you can use <picture> tag to render diff images based on screen si
 
 ### Useful resources
 
-- [Example resource 1](https://web.dev/learn/design/picture-element) 
-- [Example resource 2](https://web.dev/learn/design/responsive-images)
-
-These articles helped me make a better decision regarding the images for this project. It was linked as a reading resource by FEM in the lesson before this challenge.
+- [Flexbox Froggy](https://flexboxfroggy.com/): I had completed this game before getting started with FEM but I did it once again before starting the challenge to refresh my memory and I learned things I didn't pay attention to (like align-self, align-content) when I played the game first time.
 
 ## Acknowledgments
 
 - [Render](https://render.com/) for hosting
 - [Google Fonts](https://fonts.google.com/) for the fonts
 - [Frontend Mentor](https://www.frontendmentor.io/) for providing the links to suitable resources that helped me in this project.
-- [web.dev](https://web.dev/) Their articles regarding making images fluid were linked by the FEM.
+- [Flexbox Froggy](https://flexboxfroggy.com/) for teaching flexbox in a cool way
 
 ## Author
 
