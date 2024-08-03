@@ -54,7 +54,7 @@ strong {
 .testimonial {
   border-radius: 8px;
   background-color: hsl(0, 0%, 100%);
-  padding: 2rem 2.5rem;
+  padding: 1.8rem 2.5rem;
   color: hsl(217, 19%, 35%);
 }
 .testimonial p {
