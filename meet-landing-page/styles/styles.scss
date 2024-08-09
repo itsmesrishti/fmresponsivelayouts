@@ -22,7 +22,7 @@ main {
 
 // LOGO
 .brand-logo {
-  margin: 80px 0 3rem;
+  margin: 3rem 0;
   width: 7rem;
   height: auto;
 }
@@ -159,6 +159,10 @@ main {
 }
 
 @media screen and (min-width: 64em) {
+  .brand-logo {
+    margin-top: 80px;
+  }
+  
   h2 {
     max-width: 27rem;
   }
