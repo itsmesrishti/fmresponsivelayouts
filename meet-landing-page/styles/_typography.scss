@@ -1,0 +1,87 @@
+body {
+  color: $slate-600;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+  margin: calc(2vw + 1.5rem) auto 1rem;
+  font-weight: 900;
+  color: $slate-900;
+  width: 75vw;
+  max-width: 18rem;
+
+  @media screen and (min-width: 45em) {
+    max-width: 20rem;
+  }
+
+  @media screen and (min-width: 53em) {
+    max-width: 26rem;
+  }
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.5;
+
+  @media screen and (min-width: 26em) {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+}
+
+// BUTTONS
+button {
+  font-weight: 900;
+  color: $white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: $purple-600;
+  margin-top: 1rem;
+  width: max-content;
+  height: max-content;
+  font-size: 1rem;
+
+  .version {
+    color: $purple-300;
+  }
+
+  &:hover {
+    background-color: $purple-hover;
+    cursor: pointer;
+  }
+}
+
+.blue-btn {
+  background-color: $cyan-600;
+
+  .version {
+    color: $cyan-300;
+  }
+
+  &:hover {
+    background-color: $cyan-hover;
+  }
+}
+
+// num
+.num {
+  font-weight: 900;
+}
+
+.title-case {
+  text-transform: uppercase;
+  color: $cyan-600;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+h2 {
+  color: $slate-900;
+  font-size: clamp(2rem, 2vw + 1rem, 2.5rem);
+  font-weight: 900;
+  margin: 1rem auto 2rem;
+  width: 80vw;
+  max-width: 25rem;
+}

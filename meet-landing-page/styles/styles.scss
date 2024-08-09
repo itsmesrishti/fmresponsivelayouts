@@ -1,0 +1,263 @@
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// IMPORTS
+@import "_variables.scss";
+@import "_typography.scss";
+
+// GENERAL
+html {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+// LOGO
+.brand-logo {
+  margin: 3rem 0;
+  width: 7rem;
+  height: auto;
+}
+
+// BANNER SECTION
+.banner-img {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 40vw;
+    background-image: url("/images/tablet/image-hero.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.banner-content {
+  padding: 0 2.1rem;
+
+  p {
+    margin: 0.5rem auto;
+  }
+}
+
+// section num
+.section-1,
+.section-2 {
+  margin-top: calc(2vw + 8rem);
+}
+
+.num {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid $slate-300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 4rem;
+  background-color: white;
+  color: $slate-600;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 5rem;
+    background-color: $slate-300;
+    position: relative;
+    top: -4.2rem;
+    left: 0.5rem;
+  }
+}
+
+// img gallery
+.img-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto 4rem;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    border-radius: 0.5rem;
+  }
+}
+
+.section-1 {
+  padding: 0 1.5rem;
+
+  p {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+.section-2 {
+  background-image: url("/images/mobile/image-footer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $cyan-600;
+  background-blend-mode: soft-light;
+  color: $white;
+  margin-top: calc(2vw + 10rem);
+  padding: 0 1.5rem 3rem;
+
+  .num {
+    position: relative;
+    top: -1.8rem;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: $white;
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 23em) {
+  html {
+    font-size: 13px;
+  }
+
+  .img-group img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .section-1 p {
+    max-width: 32rem;
+  }
+  .section-2 {
+    background-image: url("/images/tablet/image-footer.jpg");
+  }
+}
+
+@media screen and (min-width: 64em) {
+  h2 {
+    max-width: 27rem;
+  }
+
+  .section-2 {
+    background-image: url("/images/desktop/image-footer.jpg");
+    padding: 0 calc(1vw + 1rem) 6rem;
+
+    .sec-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr .4fr;
+      gap: 4rem;
+      text-align: left;
+      margin-top: 6rem;
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      h2 {
+        max-width: unset;
+        width: unset;
+      }
+
+      h2,
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .img-group img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .banner-img {
+    background-image: url("/images/desktop/image-hero-left.png"), url("/images/desktop/image-hero-right.png");
+    background-repeat: no-repeat;
+    background-position: left -1.5rem top calc(50% + 1.5rem), right -1.5rem top calc(50% + 4rem);
+    position: absolute;
+    top: 28px;
+    width: 100%;
+    background-size: 27.5%;
+
+    &::before {
+      background-image: none;
+    }
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .img-group img {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .section-2 {
+    padding: 0 10% 6rem;
+
+    .sec-content {
+      grid-template-columns: 1fr .8fr .4fr;
+    }
+  }
+}
+
+// for devices larger than 1440px
+@media screen and (min-width: 95em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 104em) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 30px;
+  }
+}
+
+// for all the devices smaller than 320px
+@media screen and (max-width: 12em) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 8em) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (max-width: 4em) {
+  html {
+    font-size: 2px;
+  }
+}

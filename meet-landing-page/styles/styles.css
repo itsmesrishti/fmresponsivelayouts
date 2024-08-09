@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #87879D;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+  margin: calc(2vw + 1.5rem) auto 1rem;
+  font-weight: 900;
+  color: #28283D;
+  width: 75vw;
+  max-width: 18rem;
+}
+@media screen and (min-width: 45em) {
+  h1 {
+    max-width: 20rem;
+  }
+}
+@media screen and (min-width: 53em) {
+  h1 {
+    max-width: 26rem;
+  }
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media screen and (min-width: 26em) {
+  p {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+}
+
+button {
+  font-weight: 900;
+  color: #fafafa;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #855FB1;
+  margin-top: 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 1rem;
+}
+button .version {
+  color: #D9B8FF;
+}
+button:hover {
+  background-color: #B18BDD;
+  cursor: pointer;
+}
+
+.blue-btn {
+  background-color: #4D96A9;
+}
+.blue-btn .version {
+  color: #8FE3F9;
+}
+.blue-btn:hover {
+  background-color: #71c0d4;
+}
+
+.num {
+  font-weight: 900;
+}
+
+.title-case {
+  text-transform: uppercase;
+  color: #4D96A9;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+h2 {
+  color: #28283D;
+  font-size: clamp(2rem, 2vw + 1rem, 2.5rem);
+  font-weight: 900;
+  margin: 1rem auto 2rem;
+  width: 80vw;
+  max-width: 25rem;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+.brand-logo {
+  margin: 3rem 0;
+  width: 7rem;
+  height: auto;
+}
+
+.banner-img::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40vw;
+  background-image: url("/images/tablet/image-hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  padding: 0 2.1rem;
+}
+.banner-content p {
+  margin: 0.5rem auto;
+}
+
+.section-1,
+.section-2 {
+  margin-top: calc(2vw + 8rem);
+}
+
+.num {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #D1D1DF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 4rem;
+  background-color: white;
+  color: #87879D;
+}
+.num::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 5rem;
+  background-color: #D1D1DF;
+  position: relative;
+  top: -4.2rem;
+  left: 0.5rem;
+}
+
+.img-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.img-group img {
+  border-radius: 0.5rem;
+}
+
+.section-1 {
+  padding: 0 1.5rem;
+}
+.section-1 p {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.section-2 {
+  background-image: url("/images/mobile/image-footer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4D96A9;
+  background-blend-mode: soft-light;
+  color: #fafafa;
+  margin-top: calc(2vw + 10rem);
+  padding: 0 1.5rem 3rem;
+}
+.section-2 .num {
+  position: relative;
+  top: -1.8rem;
+  margin: 0 auto;
+}
+.section-2 h2 {
+  color: #fafafa;
+  margin-top: 0;
+}
+.section-2 p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 23em) {
+  html {
+    font-size: 13px;
+  }
+  .img-group img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+@media screen and (min-width: 30em) {
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 48em) {
+  .section-1 p {
+    max-width: 32rem;
+  }
+  .section-2 {
+    background-image: url("/images/tablet/image-footer.jpg");
+  }
+}
+@media screen and (min-width: 64em) {
+  h2 {
+    max-width: 27rem;
+  }
+  .section-2 {
+    background-image: url("/images/desktop/image-footer.jpg");
+    padding: 0 calc(1vw + 1rem) 6rem;
+  }
+  .section-2 .sec-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr;
+    gap: 4rem;
+    text-align: left;
+    margin-top: 6rem;
+  }
+  .section-2 .sec-content p {
+    font-size: 1.1rem;
+  }
+  .section-2 .sec-content h2 {
+    max-width: unset;
+    width: unset;
+  }
+  .section-2 .sec-content h2,
+  .section-2 .sec-content p {
+    margin: 0;
+  }
+  .img-group img {
+    width: 14rem;
+    height: 14rem;
+  }
+  .banner-img {
+    background-image: url("/images/desktop/image-hero-left.png"), url("/images/desktop/image-hero-right.png");
+    background-repeat: no-repeat;
+    background-position: left -1.5rem top calc(50% + 1.5rem), right -1.5rem top calc(50% + 4rem);
+    position: absolute;
+    top: 28px;
+    width: 100%;
+    background-size: 27.5%;
+  }
+  .banner-img::before {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 90em) {
+  .img-group img {
+    width: 17rem;
+    height: 17rem;
+  }
+  .section-2 {
+    padding: 0 10% 6rem;
+  }
+  .section-2 .sec-content {
+    grid-template-columns: 1fr 0.8fr 0.4fr;
+  }
+}
+@media screen and (min-width: 95em) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 104em) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 12em) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 8em) {
+  html {
+    font-size: 4px;
+  }
+}
+@media screen and (max-width: 4em) {
+  html {
+    font-size: 2px;
+  }
+}/*# sourceMappingURL=styles.css.map */
