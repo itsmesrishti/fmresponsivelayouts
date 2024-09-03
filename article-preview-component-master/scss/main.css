@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+h2 {
+  color: #48556A;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+}
+
+p {
+  color: #6E8098;
+  font-size: 500;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+}
+
+.author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #ECF2F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0 2rem;
+  gap: 3rem;
+}
+
+main {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.article-preview-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 43vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-content {
+  padding: 2rem 2rem 0;
+}/*# sourceMappingURL=main.css.map */
