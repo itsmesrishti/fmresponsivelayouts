@@ -1,11 +1,12 @@
 @import "./base/reset";
 @import "./base/typography";
 @import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./components/buttons";
 
 body {
   background-color: $body-bg;
-  display: flex;
-  align-items: center;
+  @include display-flex;
   justify-content: center;
   flex-direction: column;
   padding: 3rem 0 2rem;
@@ -15,7 +16,7 @@ body {
 main {
   background-color: $card-bg;
   border-radius: $border-radius;
-  width: 90%;
+  width: 86%;
 }
 
 .article-preview-img {
@@ -26,5 +27,25 @@ main {
 }
 
 .card-content {
-  padding: 2rem 2rem 0;
+  padding: 2rem;
+}
+
+.card-footer {
+  @include display-flex;
+  justify-content: space-between;
+}
+
+.author-info {
+  @include display-flex;
+  gap: 10px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.share-block {
+  display: none;
 }
