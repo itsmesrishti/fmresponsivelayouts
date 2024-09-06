@@ -9,24 +9,33 @@ html {
   font-size: 13px;
 }
 
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 h2 {
   color: #48556A;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 1.23rem;
+  line-height: 1.85rem;
+  font-weight: 700;
 }
 
 p {
   color: #6E8098;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.54rem;
   margin: 1rem 0;
   letter-spacing: 0.12px;
 }
 
+.author-info {
+  line-height: 1.54rem;
+}
 .author-info h3 {
   color: #48556A;
-  margin-bottom: 0.3rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -69,13 +78,14 @@ main {
 }
 
 .card-content {
-  padding: 2rem;
+  padding: 2.5rem 2.7rem 1.5rem;
 }
 
 .card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .author-info {
@@ -91,4 +101,18 @@ main {
 
 .share-block {
   display: none;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #6E8098;
 }/*# sourceMappingURL=main.css.map */

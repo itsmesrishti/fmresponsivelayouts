@@ -5,25 +5,33 @@ html {
   font-size: 13px;
 }
 
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 h2 {
   color: $heading-color;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 1.23rem;
+  line-height: 1.85rem;
+  font-weight: 700;
 }
 
 p {
   color: $body-color;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.54rem;
   margin: 1rem 0;
   letter-spacing: 0.12px;
 }
 
 .author-info {
+  line-height: 1.54rem;
+
   h3 {
     color: $heading-color;
-    margin-bottom: .3rem;
     font-size: 1rem;
     font-weight: 700;
   }
