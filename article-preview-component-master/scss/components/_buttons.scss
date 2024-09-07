@@ -4,4 +4,12 @@
     border-radius: 50%;
     background-color: $body-bg;
     border: none;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.share-block button {
+    border: none;
+    background: none;
+    cursor: pointer;
 }

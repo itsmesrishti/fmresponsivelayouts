@@ -17,6 +17,7 @@ main {
   background-color: $card-bg;
   border-radius: $border-radius;
   width: 86%;
+  position: relative;
 }
 
 .article-preview-img {
@@ -27,13 +28,18 @@ main {
 }
 
 .card-content {
-  padding: 2.5rem 2.7rem 1.5rem;
+  padding: 2.5rem 2.7rem 5.5rem;
 }
 
 .card-footer {
   @include display-flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0.9rem 2.7rem 1.1rem;
+  border-radius: 0 0 $border-radius $border-radius;
 }
 
 .author-info {
@@ -50,6 +56,12 @@ main {
 // share block
 .share-block {
   display: none;
+  align-items: center;
+  gap: 1.23rem;
+}
+
+.dark-bg {
+  background-color: $heading-color;
 }
 
 // footer

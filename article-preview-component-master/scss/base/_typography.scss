@@ -42,3 +42,19 @@ p {
     font-weight: 500;
   }
 }
+
+.share-block {
+  span {
+    text-transform: uppercase;
+    color: $body-color-light;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    width: max-content;
+    margin-right: -.4rem;
+  }
+
+  img {
+    width: 1.5rem;
+    height: 1.55rem;
+  }
+}

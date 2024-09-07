@@ -45,12 +45,34 @@ p {
   font-weight: 500;
 }
 
+.share-block span {
+  text-transform: uppercase;
+  color: #9DAEC2;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: -0.4rem;
+}
+.share-block img {
+  width: 1.5rem;
+  height: 1.55rem;
+}
+
 .share-btn {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   background-color: #ECF2F8;
   border: none;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.share-block button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 body {
@@ -67,6 +89,7 @@ main {
   background-color: #FFFFFF;
   border-radius: 10px;
   width: 86%;
+  position: relative;
 }
 
 .article-preview-img {
@@ -78,14 +101,19 @@ main {
 }
 
 .card-content {
-  padding: 2.5rem 2.7rem 1.5rem;
+  padding: 2.5rem 2.7rem 5.5rem;
 }
 
 .card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0.9rem 2.7rem 1.1rem;
+  border-radius: 0 0 10px 10px;
 }
 
 .author-info {
@@ -101,6 +129,12 @@ main {
 
 .share-block {
   display: none;
+  align-items: center;
+  gap: 1.23rem;
+}
+
+.dark-bg {
+  background-color: #48556A;
 }
 
 footer {
