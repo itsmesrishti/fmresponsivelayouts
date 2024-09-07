@@ -8,6 +8,21 @@ html {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
 }
+@media screen and (min-width: 125rem) {
+  html {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 21rem) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 16rem) {
+  html {
+    font-size: 0.5rem;
+  }
+}
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -17,38 +32,38 @@ body {
 
 h2 {
   color: #48556A;
-  font-size: 1.23rem;
-  line-height: 1.85rem;
+  font-size: clamp(1.231rem, 1vw + 0.7rem, 1.538rem);
+  line-height: clamp(1.846rem, 1vw + 1.35rem, 2.154rem);
   font-weight: 700;
 }
 
 p {
-  color: #6E8098;
   font-size: 1rem;
-  font-weight: 500;
   line-height: 1.54rem;
-  margin: 1rem 0;
+  color: #6E8098;
+  font-weight: 500;
+  margin: clamp(1rem, 1vw, 1.5rem) 0;
   letter-spacing: 0.12px;
 }
 
-.author-info {
-  line-height: 1.54rem;
-}
 .author-info h3 {
   color: #48556A;
-  font-size: 1rem;
   font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.54rem;
 }
 .author-info span {
   color: #9DAEC2;
-  font-size: 1rem;
   font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.54rem;
 }
 
 .share-block span {
+  font-size: 1rem;
+  line-height: 1.54rem;
   text-transform: uppercase;
   color: #9DAEC2;
-  font-size: 1rem;
   letter-spacing: 5px;
   width: -moz-max-content;
   width: max-content;
@@ -68,6 +83,10 @@ p {
   cursor: pointer;
   margin: 5px 0;
 }
+.share-btn img {
+  width: 1.1rem;
+  height: auto;
+}
 
 .share-block button {
   border: none;
@@ -83,25 +102,52 @@ body {
   flex-direction: column;
   padding: 3rem 0 2rem;
   gap: 3rem;
+  min-height: 100vh;
 }
 
 main {
   background-color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 0.8rem;
   width: 86%;
   position: relative;
+  max-width: 28.5rem;
+}
+@media screen and (min-width: 64rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1.55fr;
+    width: 70%;
+    max-width: 56rem;
+  }
 }
 
 .article-preview-img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
-  height: 43vh;
+  border-radius: 0.8rem 0.8rem 0 0;
+  max-height: 15.5rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 64rem) {
+  .article-preview-img {
+    height: 100%;
+    max-height: none;
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+}
 
 .card-content {
-  padding: 2.5rem 2.7rem 5.5rem;
+  padding: 2.4rem 2.7rem 5.5rem;
+}
+@media screen and (min-width: 64rem) {
+  .card-content {
+    padding-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 21rem) {
+  .card-content {
+    padding: 7vw 7vw 20vw;
+  }
 }
 
 .card-footer {
@@ -112,8 +158,22 @@ main {
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 0.9rem 2.7rem 1.1rem;
-  border-radius: 0 0 10px 10px;
+  padding: 0.9rem 2.7rem 1.2rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 64rem) {
+  .card-footer {
+    position: static;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 21rem) {
+  .card-footer {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
 }
 
 .author-info {
@@ -122,8 +182,8 @@ main {
   gap: 10px;
 }
 .author-info img {
-  width: 40px;
-  height: 40px;
+  width: 3.077rem;
+  height: 3.077rem;
   border-radius: 50%;
 }
 
@@ -131,6 +191,27 @@ main {
   display: none;
   align-items: center;
   gap: 1.23rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 64rem) {
+  .share-block {
+    background-color: #48556A;
+    padding: 1.2rem 3rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    right: -10%;
+    bottom: 7rem;
+  }
+  .share-block::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #48556A;
+    border-left: 10px solid #FFFFFF;
+    border-right: 10px solid #FFFFFF;
+    position: absolute;
+    bottom: -10px;
+    left: 46%;
+  }
 }
 
 .dark-bg {
@@ -149,4 +230,10 @@ footer a {
   text-decoration: none;
   font-weight: 700;
   color: #6E8098;
+}
+@media screen and (min-width: 64rem) and (min-height: 30rem) {
+  footer {
+    position: absolute;
+    bottom: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

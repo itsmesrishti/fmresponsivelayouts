@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   padding: 3rem 0 2rem;
   gap: 3rem;
+  min-height: 100vh;
 }
 
 main {
@@ -18,17 +19,39 @@ main {
   border-radius: $border-radius;
   width: 86%;
   position: relative;
+  max-width: 28.5rem;
+
+  @media screen and (min-width: 64rem) {
+    display: grid;
+    grid-template-columns: 1fr 1.55fr;
+    width: 70%;
+    max-width: 56rem;
+  }
 }
 
 .article-preview-img {
   width: 100%;
   border-radius: $border-radius $border-radius 0 0;
-  height: 43vh;
+  max-height: 15.5rem;
   object-fit: cover;
+
+  @media screen and (min-width: 64rem) {
+    height: 100%;
+    max-height: none;
+    border-radius: $border-radius 0 0 $border-radius;
+  }
 }
 
 .card-content {
-  padding: 2.5rem 2.7rem 5.5rem;
+  padding: 2.4rem 2.7rem 5.5rem;
+
+  @media screen and (min-width: 64rem) {
+    padding-bottom: 2.5rem;
+  }
+
+  @media screen and (max-width: 21rem) {
+    padding: 7vw 7vw 20vw;
+  }
 }
 
 .card-footer {
@@ -38,8 +61,20 @@ main {
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 0.9rem 2.7rem 1.1rem;
+  padding: 0.9rem 2.7rem 1.2rem;
   border-radius: 0 0 $border-radius $border-radius;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 64rem) {
+    position: static;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+
+  @media screen and (max-width: 21rem) {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
 }
 
 .author-info {
@@ -47,8 +82,8 @@ main {
   gap: 10px;
 
   img {
-    width: 40px;
-    height: 40px;
+    width: 3.077rem;
+    height: 3.077rem;
     border-radius: 50%;
   }
 }
@@ -58,6 +93,27 @@ main {
   display: none;
   align-items: center;
   gap: 1.23rem;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 64rem) {
+    background-color: $heading-color;
+    padding: 1.2rem 3rem;
+    border-radius: $border-radius;
+    position: absolute;
+    right: -10%;
+    bottom: 7rem;
+
+    &::after {
+      content: "";
+      display: block;
+      border-top: 10px solid $heading-color;
+      border-left: 10px solid $card-bg;
+      border-right: 10px solid $card-bg;
+      position: absolute;
+      bottom: -10px;
+      left: 46%;
+    }
+  }
 }
 
 .dark-bg {
@@ -78,5 +134,10 @@ footer {
     text-decoration: none;
     font-weight: 700;
     color: $body-color;
+  }
+
+  @media screen and (min-width: 64rem) and (min-height: 30rem) {
+    position: absolute;
+    bottom: 1.5rem;
   }
 }
