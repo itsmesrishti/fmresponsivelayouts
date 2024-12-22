@@ -63,7 +63,7 @@ I learned about some background properties like background-blend-mode. And I lea
 
 ### Useful resources
 
-- [Background position property](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) -
+- [Background position property](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
 
 ## Acknowledgments
 
